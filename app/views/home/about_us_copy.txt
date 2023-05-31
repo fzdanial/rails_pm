@@ -1,0 +1,39 @@
+<div id="container">
+  <div id="content">
+    <div id="about">
+      <h1>
+        <div style='float:left; margin-bottom:20px;'>
+          Danial Zulkifli
+        </div>
+        <div class="stage">
+          <div class="pyramid3d">
+            <div class="triangle side1"></div>
+            <div class="triangle side2"></div>
+            <div class="triangle side3"></div>
+            <div class="triangle side4"></div>
+          </div>
+        </div> 
+      </h1>
+      <h3 style='clear:both' class="subhead">
+        <a href="https://www.linkedin.com/in/fzdanial/">Danial</a> is an enthusiastic, self-taught web applications developer and data scientist.
+      </h3>
+      <p id='pleft'>
+        RESUME GOES HERE
+      </p>
+      <p id='pright'>
+        PORTFOLIO GOES HERE
+      </p>
+      <ul>
+        <li>Notable projects go here</li>
+        <%#
+        <li><a href="https://cssdeck.com/labs/css-only-full-page-slider">CSS Only Full Page Slider</a></li>
+        <li><a href="https://codepen.io/Zeaklous/pen/alpEm">CSS3 Circular Questionnaire (Plugin in development)</a></li>
+        <li><a href="https://zachsaucier.com/TumblrBook.html">TumblrBook</a></li>
+        %>
+      </ul>
+      <p>
+        Feel free to contact him at fzdanial09[at]gmail.com if you'd like for him to work for you!
+      </p>
+    </div>
+  </div>
+</div>

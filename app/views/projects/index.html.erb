@@ -1,0 +1,67 @@
+
+
+<h1>Projects</h1>
+
+<% if user_signed_in? %>
+
+    <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">Project Name</th>
+                <th scope="col">Task</th>
+                <th scope="col">Remark</th>
+                <th scope="col">Status</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Updated</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody class="table-group-divider">
+            <% @projects.each do |project| %>
+                <% if project.user == current_user %>
+                <tr>
+                    <td><%= link_to project.name, project%></td>
+                    <td><%= project.task%></td>
+                    <td><%= project.remark%></td>
+                    <td><%= project.status%></td>
+                    <td><%= project.startdate%></td>
+                    <td><%= project.enddate%></td>
+                    <td><%= project.updated_at.to_date%></td>
+
+                    <td> <%= link_to 'Delete', project, method: :delete, data: {confirm: 'Are you sure' }, class: "btn btn-outline-danger btn-sm"%> </td>
+                    
+                </tr>
+                <% end %>
+            <% end %>
+        </tbody>
+        
+    </table>
+
+    <%= link_to "New Item", new_project_path, class: "btn btn-primary" %>
+
+<% else %>
+
+    <h1>Project Management</h1>
+    <br/>
+    <h3>To do List:</h3>
+    <ol>
+    <li> build a project List page - DONE</li>
+    <li> link to project list page - DONE</li>
+    <li> build a crud to add new Projects - DONE </li>
+    <li> build sign in pages so that only I can edit </li>
+    <li> Add a new page (dropdown) such that I can see all projects or just my projects </li>
+    <li> edit the crud projects such that I can change them based on status </li>
+    <li> website design 
+    <ul>
+        <li> make it such that each project links to the github page </li>
+        <li> create an edit button on the project list </li>
+        <li> put backgrounds and themes</li>
+    </ul>
+    </li>
+
+    </ol>
+
+
+<% end %>
