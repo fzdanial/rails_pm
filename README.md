@@ -1,24 +1,17 @@
-# README
+# Project Management App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is to allow to track for project management. The about us page is not yet updated. 
 
-Things you may want to cover:
+## To do List:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- build a project List page - DONE
+- link to project list page - DONE
+- build a crud to add new Projects - DONE 
+- build sign in pages so that only I can edit - DONE
+- Add a new page (dropdown) such that I can see all projects or just my projects 
+- edit the crud projects such that I can change them based on status 
+- website design 
+    - make it such that each project links to the github page 
+    - create an edit button on the project list 
+    - put backgrounds and themes
+  
